@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: azure;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 3rem 20rem 20rem 3rem;
+  background-color: lightblue;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#header {
+  border: black 1px solid;
+  grid-column: span 4;
+}
+
+#main {
+  border: black 1px solid;
+  grid-column: span 4;
+}
+
+#about {
+  border: black 1px solid;
+  grid-column: span 2;
+}
+
+#projects {
+  border: black 1px solid;
+  grid-column: span 2;
+}
+
+#footer {
+  border: black 1px solid;
+  grid-column: span 4;
+}
+
+@media only screen and (max-width: 800px) {
+  #about {
+    grid-column: span 4;
+  }
+  #projects {
+    grid-column: span 4;
+  }
+}
